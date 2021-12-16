@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="ev_radius" format="dimension" />
+    <attr name="ev_left_radius" format="dimension" />
+    <attr name="ev_top_radius" format="dimension" />
+    <attr name="ev_right_radius" format="dimension" />
+    <attr name="ev_bottom_radius" format="dimension" />
+    <attr name="ev_topLeft_radius" format="dimension" />
+    <attr name="ev_topRight_radius" format="dimension" />
+    <attr name="ev_bottomRight_radius" format="dimension" />
+    <attr name="ev_bottomLeft_radius" format="dimension" />
+
+    <attr name="ev_stroke_width" format="dimension" />
+    <attr name="ev_stroke_color" format="reference|color" />
+    
+    <!--控件-->
+    <declare-styleable name="EasyView">
+        <attr name="ev_radius"/>
+        <attr name="ev_left_radius"/>
+        <attr name="ev_top_radius"/>
+        <attr name="ev_right_radius"/>
+        <attr name="ev_bottom_radius"/>
+        <attr name="ev_topLeft_radius"/>
+        <attr name="ev_topRight_radius"/>
+        <attr name="ev_bottomRight_radius"/>
+        <attr name="ev_bottomLeft_radius"/>
+        <attr name="ev_stroke_width"/>
+        <attr name="ev_stroke_color"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasyTextView">
+        <attr name="ev_radius"/>
+        <attr name="ev_left_radius"/>
+        <attr name="ev_top_radius"/>
+        <attr name="ev_right_radius"/>
+        <attr name="ev_bottom_radius"/>
+        <attr name="ev_topLeft_radius"/>
+        <attr name="ev_topRight_radius"/>
+        <attr name="ev_bottomRight_radius"/>
+        <attr name="ev_bottomLeft_radius"/>
+        <attr name="ev_stroke_width"/>
+        <attr name="ev_stroke_color"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasyImageView">
+        <attr name="ev_radius"/>
+        <attr name="ev_left_radius"/>
+        <attr name="ev_top_radius"/>
+        <attr name="ev_right_radius"/>
+        <attr name="ev_bottom_radius"/>
+        <attr name="ev_topLeft_radius"/>
+        <attr name="ev_topRight_radius"/>
+        <attr name="ev_bottomRight_radius"/>
+        <attr name="ev_bottomLeft_radius"/>
+        <attr name="ev_stroke_width"/>
+        <attr name="ev_stroke_color"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasyButton">
+        <attr name="ev_radius"/>
+        <attr name="ev_left_radius"/>
+        <attr name="ev_top_radius"/>
+        <attr name="ev_right_radius"/>
+        <attr name="ev_bottom_radius"/>
+        <attr name="ev_topLeft_radius"/>
+        <attr name="ev_topRight_radius"/>
+        <attr name="ev_bottomRight_radius"/>
+        <attr name="ev_bottomLeft_radius"/>
+        <attr name="ev_stroke_width"/>
+        <attr name="ev_stroke_color"/>
+    </declare-styleable>
+
+    <!--控件组-->
+    <declare-styleable name="EasyConstraintLayout">
+        <attr name="ev_radius"/>
+        <attr name="ev_left_radius"/>
+        <attr name="ev_top_radius"/>
+        <attr name="ev_right_radius"/>
+        <attr name="ev_bottom_radius"/>
+        <attr name="ev_topLeft_radius"/>
+        <attr name="ev_topRight_radius"/>
+        <attr name="ev_bottomRight_radius"/>
+        <attr name="ev_bottomLeft_radius"/>
+        <attr name="ev_stroke_width"/>
+        <attr name="ev_stroke_color"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasyLinearLayout">
+        <attr name="ev_radius"/>
+        <attr name="ev_left_radius"/>
+        <attr name="ev_top_radius"/>
+        <attr name="ev_right_radius"/>
+        <attr name="ev_bottom_radius"/>
+        <attr name="ev_topLeft_radius"/>
+        <attr name="ev_topRight_radius"/>
+        <attr name="ev_bottomRight_radius"/>
+        <attr name="ev_bottomLeft_radius"/>
+        <attr name="ev_stroke_width"/>
+        <attr name="ev_stroke_color"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasyRelativeLayout">
+        <attr name="ev_radius"/>
+        <attr name="ev_left_radius"/>
+        <attr name="ev_top_radius"/>
+        <attr name="ev_right_radius"/>
+        <attr name="ev_bottom_radius"/>
+        <attr name="ev_topLeft_radius"/>
+        <attr name="ev_topRight_radius"/>
+        <attr name="ev_bottomRight_radius"/>
+        <attr name="ev_bottomLeft_radius"/>
+        <attr name="ev_stroke_width"/>
+        <attr name="ev_stroke_color"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasyFrameLayout">
+        <attr name="ev_radius"/>
+        <attr name="ev_left_radius"/>
+        <attr name="ev_top_radius"/>
+        <attr name="ev_right_radius"/>
+        <attr name="ev_bottom_radius"/>
+        <attr name="ev_topLeft_radius"/>
+        <attr name="ev_topRight_radius"/>
+        <attr name="ev_bottomRight_radius"/>
+        <attr name="ev_bottomLeft_radius"/>
+        <attr name="ev_stroke_width"/>
+        <attr name="ev_stroke_color"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasyRecyclerView">
+        <attr name="ev_radius"/>
+        <attr name="ev_left_radius"/>
+        <attr name="ev_top_radius"/>
+        <attr name="ev_right_radius"/>
+        <attr name="ev_bottom_radius"/>
+        <attr name="ev_topLeft_radius"/>
+        <attr name="ev_topRight_radius"/>
+        <attr name="ev_bottomRight_radius"/>
+        <attr name="ev_bottomLeft_radius"/>
+        <attr name="ev_stroke_width"/>
+        <attr name="ev_stroke_color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--demo color-->
+    <color name="demo1">#08ffc8</color>
+    <color name="demo2">#fff7f7</color>
+    <color name="demo3">#dadada</color>
+    <color name="demo4">#204969</color>
+
+
+    <color name="demo5">#3B3115</color>
+    <color name="demo6">#EBAF60</color>
+    <color name="demo7">#205C55</color>
+    <color name="demo8">#F0E5D0</color>
+
+    <color name="demo9">#d6402d</color>
+    <color name="demo10">#fe7846</color>
+    <color name="demo11">#fafbfe</color>
+    <color name="demo12">#f5c999</color>
+
+    <color name="demo13">#f05945</color>
+    <color name="demo14">#747e80</color>
+    <color name="demo15">#d5e1dd</color>
+    <color name="demo16">#f7f3e9</color>
+
+    <color name="demo17">#008744</color>
+    <color name="demo18">#0057e7</color>
+    <color name="demo19">#D62D20</color>
+    <color name="demo20">#FFA700</color>
+
+    <color name="demo21">#69d2e7</color>
+    <color name="demo22">#a7dbdb</color>
+    <color name="demo23">#e0e4cc</color>
+    <color name="demo24">#f38630</color>
+</resources>

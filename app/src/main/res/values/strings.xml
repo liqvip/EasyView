@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EasyView</string>
+
+    <!--demo string-->
+    <string name="so_easy">Easy!</string>
+    <string name="easy_view">EasyView</string>
+    <string name="easy_text_view">EasyTextView</string>
+    <string name="easy_Image_view">EasyImageView</string>
+    <string name="easy_edit_text">EasyEditText</string>
+    <string name="easy_button">EasyButton</string>
+
+    <string name="easy_linear_layout">EasyLinearLayout</string>
+    <string name="easy_relative_layout">EasyRelativeLayout</string>
+    <string name="easy_frame_layout">EasyFrameLayout</string>
+    <string name="easy_constraint_layout">EasyConstraintLayout</string>
+    <string name="easy_recycler_view">EasyRecyclerView</string>
+</resources>
