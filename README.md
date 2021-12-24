@@ -46,7 +46,7 @@ allprojects {
 ```groovy
 dependencies {
     ...
-    implementation 'com.github.liqvip:EasyView:1.0.0'
+    implementation 'com.github.liqvip:EasyView:1.0.1'
 }
 ```
 
@@ -101,10 +101,16 @@ dependencies {
 | setBottomLeftRadius(dp: Float)                                                            | 设置左下方圆角半径 | ev_bottomLeft_radius |
 | setStrokeWidth(dp: Float)                                                                 | 设置描边宽度 | ev_stroke_width |
 | setStrokeColor(color: Int)                                                                | 设置描边颜色 | ev_stroke_color |
+| setStrokeColor(argb: String)                                                              | 设置描边颜色 | ev_stroke_color |
 | setStrokeWidthColor(widthDp: Float, color: Int)                                           | 同时设置描边宽度和颜色 | ev_stroke_width,ev_stroke_color |
+
+### 在真机上运行测试
+读者可以在手机上运行此项目，动态设置 View 的圆角、描边等属性，感受实际效果。下面是运行截图。
+![](images/demo/demo_test.png)
 
 ### 版本记录
 | 版本号    | 更新内容         | 备注           |
 |--------|--------------|--------------|
+| v1.0.1 | 1. 增加真机测试界面 2. 修复代码动态设置描边不生效的问题 | 请使用 v1.0.1 版本，避免动态设置描边不生效 |
 | v1.0.0 | First commit | First commit |
 

@@ -45,5 +45,7 @@ interface EasyViewFacade {
 
     fun setStrokeColor(color: Int)
 
+    fun setStrokeColor(argb: String)
+
     fun setStrokeWidthColor(widthDp: Float, color: Int)
 }

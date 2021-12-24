@@ -16,7 +16,6 @@ class RoundSystem: EasyViewSystem {
     var bottomRightRadius = 0f
     var bottomLeftRadius = 0f
     var strokeWidth = 0f
-    var strokeColor = Color.WHITE
 
     private val outerRectF = RectF()
     private val innerRectF = RectF()
@@ -44,7 +43,6 @@ class RoundSystem: EasyViewSystem {
         bottomLeftRadius = typedArray.getDimension(R.styleable.EasyView_ev_bottomLeft_radius, if (bottomRadius > 0) bottomRadius else leftRadius)
 
         strokeWidth = typedArray.getDimension(R.styleable.EasyView_ev_stroke_width, strokeWidth)
-        strokeColor = typedArray.getColor(R.styleable.EasyView_ev_stroke_color, strokeColor)
 
         onRadiusChanged()
 
@@ -68,6 +66,9 @@ class RoundSystem: EasyViewSystem {
     }
 
     override fun draw(canvas: Canvas) {
+        if (topLeftRadius == 0f && topRightRadius == 0f && bottomRightRadius == 0f && bottomLeftRadius == 0f)
+            return
+
         paint.reset()
         paint.isAntiAlias = true
         paint.style = Paint.Style.FILL

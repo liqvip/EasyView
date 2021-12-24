@@ -2,6 +2,7 @@ package com.github.easyview
 
 import android.content.Context
 import android.graphics.Canvas
+import android.graphics.Color
 import android.util.AttributeSet
 import android.view.View
 import com.github.easyview.facade.EasyViewFacadeImpl
@@ -77,6 +78,10 @@ class EasyView(context: Context, attrs: AttributeSet?, defStyleAttr: Int, defSty
 
     override fun setStrokeColor(color: Int) {
         easyViewFacadeImpl.setStrokeColor(color)
+    }
+
+    override fun setStrokeColor(argb: String) {
+        easyViewFacadeImpl.setStrokeColor(Color.parseColor(argb))
     }
 
     override fun setStrokeWidthColor(widthDp: Float, color: Int) {

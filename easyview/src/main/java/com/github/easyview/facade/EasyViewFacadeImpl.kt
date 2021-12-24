@@ -207,6 +207,13 @@ class EasyViewFacadeImpl: BaseEasyViewFacade() {
         strokeSystem.apply {
             strokeWidth = dip2px(context, dp)
         }
+        strokeSystem.onRadiusChanged()
+        strokeSystem.onSizeChanged(width, height)
+        roundSystem.apply {
+            strokeWidth = dip2px(context, dp)
+        }
+        roundSystem.onRadiusChanged()
+        roundSystem.onSizeChanged(width, height)
         view.invalidate()
     }
 
@@ -217,11 +224,25 @@ class EasyViewFacadeImpl: BaseEasyViewFacade() {
         view.invalidate()
     }
 
+    override fun setStrokeColor(argb: String) {
+        strokeSystem.apply {
+            strokeColor = Color.parseColor(argb)
+        }
+        view.invalidate()
+    }
+
     override fun setStrokeWidthColor(widthDp: Float, color: Int) {
         strokeSystem.apply {
             strokeWidth = dip2px(context, widthDp)
             strokeColor = color
         }
+        strokeSystem.onRadiusChanged()
+        strokeSystem.onSizeChanged(width, height)
+        roundSystem.apply {
+            strokeWidth = dip2px(context, widthDp)
+        }
+        roundSystem.onRadiusChanged()
+        roundSystem.onSizeChanged(width, height)
         view.invalidate()
     }
 }
