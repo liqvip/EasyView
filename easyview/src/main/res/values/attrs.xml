@@ -12,7 +12,9 @@
 
     <attr name="ev_stroke_width" format="dimension" />
     <attr name="ev_stroke_color" format="reference|color" />
-    
+
+    <attr name="textView_count" format="integer"/>
+
     <!--控件-->
     <declare-styleable name="EasyView">
         <attr name="ev_radius"/>
@@ -26,6 +28,7 @@
         <attr name="ev_bottomLeft_radius"/>
         <attr name="ev_stroke_width"/>
         <attr name="ev_stroke_color"/>
+        <attr name="textView_count"/>
     </declare-styleable>
 
     <declare-styleable name="EasyTextView">
@@ -139,5 +142,19 @@
         <attr name="ev_bottomLeft_radius"/>
         <attr name="ev_stroke_width"/>
         <attr name="ev_stroke_color"/>
+    </declare-styleable>
+
+    <!--Other powerful custom view in EasyView-->
+    <declare-styleable name="EasyTextViewGroup">
+        <attr name="textView_count"/>
+        <attr name="ev_radius"/>
+        <attr name="ev_left_radius"/>
+        <attr name="ev_top_radius"/>
+        <attr name="ev_right_radius"/>
+        <attr name="ev_bottom_radius"/>
+        <attr name="ev_topLeft_radius"/>
+        <attr name="ev_topRight_radius"/>
+        <attr name="ev_bottomRight_radius"/>
+        <attr name="ev_bottomLeft_radius"/>
     </declare-styleable>
 </resources>

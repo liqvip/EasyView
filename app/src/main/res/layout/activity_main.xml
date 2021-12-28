@@ -6,252 +6,30 @@
     android:background="@color/demo2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/dp_20"
+    android:layout_marginEnd="@dimen/dp_20"
     tools:context=".MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/dp_20"
-        android:orientation="vertical"
-        android:gravity="center">
-        <com.github.easyview.EasyView
-            android:id="@+id/easy_v"
-            android:layout_width="@dimen/dp_250"
-            android:layout_height="@dimen/dp_150"
-            android:layout_marginTop="@dimen/dp_20"
-            android:background="@color/demo7"
-            app:ev_radius="@dimen/dp_40"
-            app:ev_stroke_width="@dimen/dp_5"
-            app:ev_stroke_color="@color/demo6"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
-            android:gravity="center"
-            android:text="@string/easy_view"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-
-        <com.github.easyview.EasyImageView
-            android:id="@+id/easy_iv"
-            android:layout_width="@dimen/dp_200"
-            android:layout_height="@dimen/dp_200"
-            android:layout_marginTop="@dimen/dp_20"
-            android:src="@drawable/jay"
-            android:scaleType="fitCenter"
-            app:ev_radius="@dimen/dp_100"
-            app:ev_stroke_width="@dimen/dp_5"
-            app:ev_stroke_color="@color/demo18"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
-            android:gravity="center"
-            android:text="@string/easy_Image_view"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-
-        <com.github.easyview.EasyImageView
-            android:id="@+id/easy_iv2"
-            android:layout_width="@dimen/dp_200"
-            android:layout_height="@dimen/dp_200"
-            android:layout_marginTop="@dimen/dp_20"
-            android:src="@drawable/hannah"
-            android:scaleType="fitCenter"
-            app:ev_radius="@dimen/dp_40"
-            app:ev_stroke_width="@dimen/dp_20"
-            app:ev_stroke_color="@color/demo24"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
-            android:gravity="center"
-            android:text="@string/easy_Image_view"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-
-        <com.github.easyview.EasyTextView
-            android:id="@+id/easy_tv"
-            android:layout_width="@dimen/dp_250"
-            android:layout_height="@dimen/dp_150"
-            android:layout_marginTop="@dimen/dp_20"
-            android:background="@color/demo14"
-            android:text="@string/so_easy"
-            android:textColor="@color/white"
-            android:textSize="@dimen/sp_30"
-            android:gravity="center"
-            app:ev_radius="@dimen/dp_40"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
-            android:gravity="center"
-            android:text="@string/easy_text_view"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-
+        android:layout_height="wrap_content">
         <com.github.easyview.EasyButton
-            android:id="@+id/easy_bt"
-            android:layout_width="@dimen/dp_250"
-            android:layout_height="@dimen/dp_150"
-            android:layout_marginTop="@dimen/dp_20"
-            android:background="@color/demo13"
-            android:textColor="@color/white"
-            android:textSize="@dimen/sp_30"
-            android:text="@string/so_easy"
+            android:id="@+id/bt_round_corner"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_50"
+            android:padding="@dimen/dp_10"
+            android:background="@color/demo6"
+            app:ev_radius="@dimen/dp_10"
             android:gravity="center"
-            app:ev_topLeft_radius="@dimen/dp_50"
-            app:ev_topRight_radius="@dimen/dp_20"
-            app:ev_bottomRight_radius="@dimen/dp_50"
-            app:ev_bottomLeft_radius="@dimen/dp_20"
-            app:ev_stroke_width="@dimen/dp_5"
-            app:ev_stroke_color="@color/demo4"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
+            android:text="RoundCorner"/>
+        <com.github.easyview.EasyButton
+            android:id="@+id/bt_text_view_group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_50"
+            android:padding="@dimen/dp_10"
+            android:background="@color/demo6"
+            android:layout_marginStart="@dimen/dp_10"
+            app:ev_radius="@dimen/dp_10"
             android:gravity="center"
-            android:text="@string/easy_button"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-
-        <com.github.easyview.EasyLinearLayout
-            android:layout_width="@dimen/dp_250"
-            android:layout_height="@dimen/dp_300"
-            android:layout_marginTop="@dimen/dp_20"
-            android:orientation="vertical"
-            app:ev_topRight_radius="@dimen/dp_50"
-            app:ev_bottomLeft_radius="@dimen/dp_50">
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dp_0"
-                android:background="@color/demo21"
-                android:layout_weight="1"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dp_0"
-                android:background="@color/demo22"
-                android:layout_weight="1"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dp_0"
-                android:background="@color/demo23"
-                android:layout_weight="1"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/dp_0"
-                android:background="@color/demo24"
-                android:layout_weight="1"/>
-        </com.github.easyview.EasyLinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
-            android:gravity="center"
-            android:text="@string/easy_linear_layout"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-
-        <com.github.easyview.EasyRelativeLayout
-            android:id="@+id/easy_rl"
-            android:layout_width="@dimen/dp_250"
-            android:layout_height="@dimen/dp_150"
-            android:layout_marginTop="@dimen/dp_20"
-            android:background="@color/demo7"
-            android:textColor="@color/white"
-            android:textSize="@dimen/sp_30"
-            android:text="@string/so_easy"
-            android:gravity="center"
-            app:ev_topLeft_radius="@dimen/dp_50"
-            app:ev_bottomLeft_radius="@dimen/dp_20"
-            app:ev_stroke_width="@dimen/dp_5"
-            app:ev_stroke_color="@color/demo6"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
-            android:gravity="center"
-            android:text="@string/easy_relative_layout"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-
-        <com.github.easyview.EasyFrameLayout
-            android:id="@+id/easy_fl"
-            android:layout_width="@dimen/dp_250"
-            android:layout_height="@dimen/dp_150"
-            android:layout_marginTop="@dimen/dp_20"
-            android:background="@color/demo17"
-            android:textColor="@color/white"
-            android:textSize="@dimen/sp_30"
-            android:text="@string/so_easy"
-            android:gravity="center"
-            app:ev_topLeft_radius="@dimen/dp_50"
-            app:ev_bottomLeft_radius="@dimen/dp_20"
-            app:ev_stroke_width="@dimen/dp_5"
-            app:ev_stroke_color="@color/demo18"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
-            android:gravity="center"
-            android:text="@string/easy_frame_layout"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-
-        <com.github.easyview.EasyConstraintLayout
-            android:id="@+id/easy_cl"
-            android:layout_width="@dimen/dp_250"
-            android:layout_height="@dimen/dp_150"
-            android:layout_marginTop="@dimen/dp_20"
-            android:background="@color/demo19"
-            android:textColor="@color/white"
-            android:textSize="@dimen/sp_30"
-            android:text="@string/so_easy"
-            android:gravity="center"
-            app:ev_topLeft_radius="@dimen/dp_50"
-            app:ev_bottomLeft_radius="@dimen/dp_20"
-            app:ev_stroke_width="@dimen/dp_5"
-            app:ev_stroke_color="@color/demo20"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
-            android:gravity="center"
-            android:text="@string/easy_constraint_layout"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-
-        <com.github.easyview.EasyRecyclerView
-            android:id="@+id/easy_rv"
-            android:layout_width="@dimen/dp_250"
-            android:layout_height="@dimen/dp_150"
-            android:layout_marginTop="@dimen/dp_20"
-            android:background="@color/demo21"
-            android:textColor="@color/white"
-            android:textSize="@dimen/sp_30"
-            android:text="@string/so_easy"
-            android:gravity="center"
-            app:ev_topLeft_radius="@dimen/dp_50"
-            app:ev_bottomLeft_radius="@dimen/dp_20"
-            app:ev_stroke_width="@dimen/dp_5"
-            app:ev_stroke_color="@color/demo24"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
-            android:gravity="center"
-            android:text="@string/easy_recycler_view"
-            android:textColor="@color/black"
-            android:textStyle="bold"/>
-
+            android:text="TextViewGroup"/>
     </LinearLayout>
 </ScrollView>

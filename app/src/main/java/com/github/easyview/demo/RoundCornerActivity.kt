@@ -10,16 +10,17 @@ import androidx.appcompat.app.AppCompatActivity
 import com.github.easyview.EasyView
 
 /**
+ * Online test for the all EasyViews which have round conner and stroke.
  * @author: Little Bei
  * @Date: 2021/12/24
  */
-class TestActivity: AppCompatActivity(), View.OnClickListener {
+class RoundCornerActivity: AppCompatActivity(), View.OnClickListener {
 
     private lateinit var easyView: EasyView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_test)
+        setContentView(R.layout.activity_round_corner)
 
         initView()
     }
