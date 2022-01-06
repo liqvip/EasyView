@@ -13,9 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <com.github.easyview.EasyButton
+            android:id="@+id/bt_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_50"
+            android:padding="@dimen/dp_10"
+            android:background="@color/demo6"
+            app:ev_radius="@dimen/dp_10"
+            android:gravity="center"
+            android:text="Demo"/>
+        <com.github.easyview.EasyButton
             android:id="@+id/bt_round_corner"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="@dimen/dp_10"
             android:padding="@dimen/dp_10"
             android:background="@color/demo6"
             app:ev_radius="@dimen/dp_10"

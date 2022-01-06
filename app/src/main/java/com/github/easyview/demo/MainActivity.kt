@@ -18,6 +18,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, ViewModel>(), View.OnClic
     }
 
     override fun initView() {
+        viewBinding.btDemo.setOnClickListener(this)
         viewBinding.btRoundCorner.setOnClickListener(this)
         viewBinding.btTextViewGroup.setOnClickListener(this)
     }
@@ -30,6 +31,9 @@ class MainActivity : BaseActivity<ActivityMainBinding, ViewModel>(), View.OnClic
 
     override fun onClick(v: View) {
         when(v.id){
+            R.id.bt_demo -> {
+                startActivity(Intent(this, ActivityDemo::class.java))
+            }
             R.id.bt_round_corner -> {
                 startActivity(Intent(this, RoundCornerActivity::class.java))
             }

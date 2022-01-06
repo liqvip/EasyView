@@ -14,4 +14,5 @@
     <string name="easy_frame_layout">EasyFrameLayout</string>
     <string name="easy_constraint_layout">EasyConstraintLayout</string>
     <string name="easy_recycler_view">EasyRecyclerView</string>
+    <string name="easy_web_view">EasyWebView</string>
 </resources>

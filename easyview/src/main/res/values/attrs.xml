@@ -9,10 +9,8 @@
     <attr name="ev_topRight_radius" format="dimension" />
     <attr name="ev_bottomRight_radius" format="dimension" />
     <attr name="ev_bottomLeft_radius" format="dimension" />
-
     <attr name="ev_stroke_width" format="dimension" />
     <attr name="ev_stroke_color" format="reference|color" />
-
     <attr name="textView_count" format="integer"/>
 
     <!--控件-->

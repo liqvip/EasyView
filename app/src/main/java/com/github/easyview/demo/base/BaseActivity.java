@@ -21,11 +21,6 @@ public abstract class BaseActivity<VB extends ViewBinding,VM extends ViewModel> 
         viewModel = getViewModel();
         viewBinding = getViewBinding(getLayoutInflater());
         setContentView(viewBinding.getRoot());
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
 
         initView();
         bindObserver();
