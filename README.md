@@ -115,7 +115,10 @@ dependencies {
 | v1.0.0 | First commit | First commit |
 
 ### Issue 模板
-非常感谢各位开发者对本库的支持，使用中如果遇到什么问题，**请务必按照以下模板（步骤）**，将问题描述清楚，方便作者尽快的解决问题！</br>
+提 Issue 只在 [Github](https://github.com/liqvip/EasyView/issues)，请勿在 Gitee（码云）发起。</br>
+
+非常感谢各位开发者对本库的支持，使用中如果遇到什么问题，可以先到 [Issue](https://github.com/liqvip/EasyView/issues) 查看有没有类似的问题。如果没有，**请务必按照以下模板（步骤）**，将问题描述清楚后再发起 Issue，方便作者尽快的解决问题！</br>
+
 1. 在什么环境/情况下遇到了什么问题。
 ```
 ......
