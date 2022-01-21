@@ -21,6 +21,8 @@ class MainActivity : BaseActivity<ActivityMainBinding, ViewModel>(), View.OnClic
         viewBinding.btDemo.setOnClickListener(this)
         viewBinding.btRoundCorner.setOnClickListener(this)
         viewBinding.btTextViewGroup.setOnClickListener(this)
+        viewBinding.btEasyTickMarkProgressBar.setOnClickListener(this)
+        viewBinding.btEasyIndicatorProgressBar.setOnClickListener(this)
     }
 
     override fun bindObserver() {
@@ -32,13 +34,19 @@ class MainActivity : BaseActivity<ActivityMainBinding, ViewModel>(), View.OnClic
     override fun onClick(v: View) {
         when(v.id){
             R.id.bt_demo -> {
-                startActivity(Intent(this, ActivityDemo::class.java))
+                startActivity(Intent(this, DemoActivity::class.java))
             }
             R.id.bt_round_corner -> {
                 startActivity(Intent(this, RoundCornerActivity::class.java))
             }
             R.id.bt_text_view_group -> {
                 startActivity(Intent(this, EasyTextViewGroupActivity::class.java))
+            }
+            R.id.bt_easyTickMarkProgressBar -> {
+                startActivity(Intent(this, EasyTickMarkProgressBarActivity::class.java))
+            }
+            R.id.bt_easyIndicatorProgressBar -> {
+                startActivity(Intent(this, EasyIndicatorProgressBarActivity::class.java))
             }
         }
     }

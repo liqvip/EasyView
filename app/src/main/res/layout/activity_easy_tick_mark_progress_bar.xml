@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/dp_20">
+    <com.github.easyview.EasyTickMarkProgressBar
+        android:id="@+id/tpb1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_136"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_56"
+        android:layout_marginRight="@dimen/dp_56"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tpb2"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/progress_style"
+        android:progress="5"
+        app:tickMark_width="@dimen/dp_2"
+        app:tickMark_color="@color/white"
+        app:tickMark_text="@array/ZeroToTen"
+        app:tickMark_textSize="@dimen/dp_32"
+        app:tickMark_textColor="@color/white"
+        app:tickMark_nextTextSize="@dimen/dp_20"
+        app:tickMark_nextTextColor="@color/demo6"/>
+
+    <com.github.easyview.EasyTickMarkProgressBar
+        android:id="@+id/tpb2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_136"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_56"
+        android:layout_marginRight="@dimen/dp_56"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tpb1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/progress_style"
+        android:progress="5"
+        app:tickMark_width="@dimen/dp_2"
+        app:tickMark_color="@color/white"
+        app:tickMark_text="@array/ZeroToTen"
+        app:tickMark_nextText="@array/kg"
+        app:tickMark_textSize="@dimen/dp_32"
+        app:tickMark_textColor="@color/white"
+        app:tickMark_nextTextSize="@dimen/dp_24"
+        app:tickMark_nextTextColor="@color/demo6"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

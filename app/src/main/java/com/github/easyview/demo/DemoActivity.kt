@@ -11,7 +11,7 @@ import com.github.easyview.demo.databinding.ActivityDemoBinding
  * @author: Little Bei
  * @Date: 2022/1/6
  */
-class ActivityDemo: BaseActivity<ActivityDemoBinding, ViewModel>() {
+class DemoActivity: BaseActivity<ActivityDemoBinding, ViewModel>() {
     override fun getViewModel(): ViewModel? {
         return null
     }

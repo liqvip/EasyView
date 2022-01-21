@@ -104,9 +104,13 @@ dependencies {
 | setStrokeColor(argb: String)                                                              | 设置描边颜色 | ev_stroke_color |
 | setStrokeWidthColor(widthDp: Float, color: Int)                                           | 同时设置描边宽度和颜色 | ev_stroke_width,ev_stroke_color |
 
-### 在真机上运行测试
-读者可以在手机上运行此项目，动态设置 View 的圆角、描边等属性，感受实际效果。下面是运行截图。
-![](images/demo/demo_test.png)
+### 其他高级自定义 View
+除了支持上述 View 的圆角描边之外，本库一直在更新一些高级的自定义 View，希望在学习和工作上对读者有帮助。
+| 名称                                                                                   | 说明                                              |
+|---------------------------------------------------------------------------------------|---------------------------------------------------|
+| [EasyTextViewGroup](docs/EasyTextViewGroup.md)                                        | 多个 TextView 的组合控件，可动态改变数量，设置圆角。   |
+| [EasyTickMarkProgressBar](docs/EasyTickMarkProgressBar.md)                            | 一个支持刻度和文字的进度条控件，继承于 ProgressBar。   |
+| [EasyIndicatorProgressBar](docs/EasyIndicatorProgressBar.md)                          | 一个支持指示器和刻度的进度条控件，继承于 ProgressBar。 |
 
 ### 版本记录
 | 版本号    | 更新内容         | 备注           |

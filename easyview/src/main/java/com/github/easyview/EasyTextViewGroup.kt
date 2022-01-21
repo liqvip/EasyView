@@ -13,9 +13,9 @@ import android.widget.TextView
  * @author: Little Bei
  * @Date: 2021/12/27
  */
-class EasyTextViewGroup(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) :
-    ViewGroup(context, attrs, defStyleAttr) {
 
+class EasyTextViewGroup(context: Context, attrs: AttributeSet?, defStyleAttr: Int) :
+    ViewGroup(context, attrs, defStyleAttr) {
     private var textViewCount = 0
     var radius = 0f
     var topLeftRadius = 0f
@@ -35,18 +35,14 @@ class EasyTextViewGroup(context: Context?, attrs: AttributeSet?, defStyleAttr: I
 
     private var childWidth = 0
 
-
-
     constructor(context: Context): this(context, null)
-    constructor(context: Context, attrs: AttributeSet?): this(context, attrs, 0) {
-        init(attrs)
-    }
+    constructor(context: Context, attrs: AttributeSet?): this(context, attrs, 0)
 
-    private fun init(attrs: AttributeSet?) {
+    init {
         setWillNotDraw(false)
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.EasyView)
 
-        textViewCount = typedArray.getInt(R.styleable.EasyView_textView_count, textViewCount)
+        textViewCount = typedArray.getInt(R.styleable.EasyView_ev_textView_count, textViewCount)
         radius = typedArray.getDimension(R.styleable.EasyView_ev_radius, radius)
         val leftRadius = typedArray.getDimension(R.styleable.EasyView_ev_left_radius, radius)
         val topRadius = typedArray.getDimension(R.styleable.EasyView_ev_top_radius, radius)
@@ -57,6 +53,7 @@ class EasyTextViewGroup(context: Context?, attrs: AttributeSet?, defStyleAttr: I
         topRightRadius = typedArray.getDimension(R.styleable.EasyView_ev_topRight_radius, if (topRadius > 0) topRadius else rightRadius)
         bottomRightRadius = typedArray.getDimension(R.styleable.EasyView_ev_bottomRight_radius, if (bottomRadius > 0) bottomRadius else rightRadius)
         bottomLeftRadius = typedArray.getDimension(R.styleable.EasyView_ev_bottomLeft_radius, if (bottomRadius > 0) bottomRadius else leftRadius)
+
         for (i in 0 until textViewCount) {
             val view = TextView(context)
             view.setTextColor(Color.parseColor("#FFFFFF"))
@@ -66,7 +63,6 @@ class EasyTextViewGroup(context: Context?, attrs: AttributeSet?, defStyleAttr: I
         onRadiusChanged()
         typedArray.recycle()
     }
-
 
     private fun onRadiusChanged() {
         roundRadii[0] = topLeftRadius

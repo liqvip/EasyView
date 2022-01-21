@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/dp_20">
+    <com.github.easyview.EasyIndicatorProgressBar
+        android:id="@+id/pb_step"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_160"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_13"
+        android:layout_marginEnd="@dimen/dp_12"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:max="10"
+        android:progress="4"
+        app:tickMark_color="@color/demo15"
+        app:tickMark_radius="@dimen/dp_10"
+        app:tickMark_activeColor="@color/demo17"
+        app:tickMark_overlayColor="@color/demo21"
+        app:tickMark_overlayRadius="@dimen/dp_15"
+        app:indicator_backgroundColor="@color/demo17"
+        app:indicator_textColor="@color/white"
+        app:indicator_textSize="@dimen/dp_24"
+        app:indicator_rectWidth="@dimen/dp_90"
+        app:indicator_rectHeight="@dimen/dp_45"
+        app:indicator_rectRadius="@dimen/dp_10"
+        app:indicator_triangle_sideLength="@dimen/dp_14"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

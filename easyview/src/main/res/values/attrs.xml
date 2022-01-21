@@ -11,7 +11,32 @@
     <attr name="ev_bottomLeft_radius" format="dimension" />
     <attr name="ev_stroke_width" format="dimension" />
     <attr name="ev_stroke_color" format="reference|color" />
-    <attr name="textView_count" format="integer"/>
+    <attr name="ev_textView_count" format="integer"/>
+
+    <!--EasyTickMarkProgressBar-->
+    <attr name="tickMark_color" format="reference|color"/>
+    <attr name="tickMark_width" format="dimension|reference"/>
+    <attr name="tickMark_text" format="reference"/>
+    <attr name="tickMark_textSize" format="dimension|reference"/>
+    <attr name="tickMark_textColor" format="color|reference"/>
+    <attr name="tickMark_nextText" format="reference"/>
+    <attr name="tickMark_nextTextSize" format="dimension|reference"/>
+    <attr name="tickMark_nextTextColor" format="color|reference"/>
+
+    <!--EasyIndicatorProgressBar-->
+    <attr name="tickMark_radius" format="reference|dimension"/>
+    <attr name="tickMark_activeColor" format="reference|color"/>
+    <attr name="tickMark_overlayRadius" format="reference|dimension"/>
+    <attr name="tickMark_overlayColor" format="reference|color"/>
+    <attr name="indicator_interval_betweenTickMark" format="reference|dimension"/>
+    <attr name="indicator_rectWidth" format="reference|dimension"/>
+    <attr name="indicator_rectHeight" format="reference|dimension"/>
+    <attr name="indicator_rectRadius" format="reference|dimension"/>
+    <attr name="indicator_triangle_sideLength" format="reference|dimension"/>
+    <attr name="indicator_textColor" format="reference|color"/>
+    <attr name="indicator_textSize" format="reference|dimension"/>
+    <attr name="indicator_backgroundColor" format="reference|color"/>
+
 
     <!--控件-->
     <declare-styleable name="EasyView">
@@ -26,7 +51,7 @@
         <attr name="ev_bottomLeft_radius"/>
         <attr name="ev_stroke_width"/>
         <attr name="ev_stroke_color"/>
-        <attr name="textView_count"/>
+        <attr name="ev_textView_count"/>
     </declare-styleable>
 
     <declare-styleable name="EasyTextView">
@@ -144,7 +169,7 @@
 
     <!--Other powerful custom view in EasyView-->
     <declare-styleable name="EasyTextViewGroup">
-        <attr name="textView_count"/>
+        <attr name="ev_textView_count"/>
         <attr name="ev_radius"/>
         <attr name="ev_left_radius"/>
         <attr name="ev_top_radius"/>
@@ -154,5 +179,32 @@
         <attr name="ev_topRight_radius"/>
         <attr name="ev_bottomRight_radius"/>
         <attr name="ev_bottomLeft_radius"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasyTickMarkProgressBar">
+        <attr name="tickMark_color"/>
+        <attr name="tickMark_width"/>
+        <attr name="tickMark_text"/>
+        <attr name="tickMark_textSize"/>
+        <attr name="tickMark_textColor"/>
+        <attr name="tickMark_nextText"/>
+        <attr name="tickMark_nextTextSize"/>
+        <attr name="tickMark_nextTextColor"/>
+    </declare-styleable>
+
+    <declare-styleable name="EasyIndicatorProgressBar">
+        <attr name="tickMark_radius"/>
+        <attr name="tickMark_color"/>
+        <attr name="tickMark_activeColor"/>
+        <attr name="tickMark_overlayRadius"/>
+        <attr name="tickMark_overlayColor"/>
+        <attr name="indicator_interval_betweenTickMark"/>
+        <attr name="indicator_rectWidth"/>
+        <attr name="indicator_rectHeight"/>
+        <attr name="indicator_rectRadius"/>
+        <attr name="indicator_triangle_sideLength"/>
+        <attr name="indicator_textColor"/>
+        <attr name="indicator_textSize"/>
+        <attr name="indicator_backgroundColor"/>
     </declare-styleable>
 </resources>

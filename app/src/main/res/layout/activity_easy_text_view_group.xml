@@ -15,7 +15,7 @@
         android:layout_height="@dimen/dp_80"
         android:layout_marginStart="@dimen/dp_10"
         android:layout_marginEnd="@dimen/dp_10"
-        app:textView_count="3"
+        app:ev_textView_count="3"
         app:ev_topLeft_radius="@dimen/dp_50"
         app:ev_bottomRight_radius="@dimen/dp_50"/>
 
